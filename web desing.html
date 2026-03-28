@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profenna info Tech</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="/assest/CSS/css/">
+    <link rel="stylesheet" href="/assest/Js/js/bootstrap.bundle.js"> -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<style>
+     .title_box {
+  background-color: #071B59;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+@media screen and (max-width:576px) {
+
+ .title_box h1 {
+     font-size: 1.3em;
+ }
+
+ .title_box p {
+     font-size: .6em !important;
+ }
+}
+/* ui design */
+
+section.hero {
+      max-width: 1140px;
+      margin: 50px auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .hero-text {
+     flex: 1;
+    }
+    .hero-text h1 {
+      
+
+
+      width: 583px;
+height: 120px;
+top: 82px;
+left: 102px;
+
+opacity: 1;
+
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+
+line-height: 100%;
+letter-spacing: 0%;
+
+
+    }
+     .hero-text p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+    } 
+    .hero-text p a {
+      color: #0048ff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .hero-text .btn {
+      margin-top: 10px;
+      background: #001f4d;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    
+    .hero-image {
+      flex: 1;
+      text-align: right;
+    }
+    .hero-image img {
+     
+ width: 463px;
+height: 473px;
+top: 87px;
+left: 812px;
+opacity: 1;
+border-radius: 30px;
+
+ }
+                                        /* media quries for Ui desingn */
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+    width: 100%;
+    height: auto;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    width: 100% !important;
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    text-align: center;
+    margin-top: 20px;
+    
+    
+
+  }
+
+  .hero-image img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+
+@media (max-width: 567px) {
+  .hero-text h1 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-text .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .hero-text h1 {
+    font-size: 20px;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .hero-text .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+
+    
+                                         
+/* website */
+    .website {
+      background-color: #0a2d5e;
+      color: #ffffff;
+      
+    }
+
+    .feature-list li {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    .feature-list i.bi-star-fill {
+  color: #ffc107; 
+  margin-right: 8px;
+  font-size: 1rem;
+}
+
+                                 /* media quries feature list */
+ @media (max-width: 1200px) {
+      .feature-list li {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .website h2 {
+        font-size: 1.75rem;
+      }
+      .feature-list li {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .feature-list {
+        columns: 1 !important;
+      }
+      .website .row {
+        
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .website h2 {
+        font-size: 1.5rem;
+      }
+      .feature-list li {
+        font-size: 12px;
+      }
+      .container-fluid {
+        margin-left: 0 !important;
+        padding: 0 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .website h2 {
+        font-size: 1.2rem;
+      }
+      .feature-list li {
+        font-size: 11px;
+      }
+    }
+
+/* setp content */
+
+
+    .step-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      
+
+    }
+
+    .step-number {
+      font-size: 60px;
+      font-weight: bold;
+      color: #7caaff;
+      
+      
+
+    }
+
+    .step-title {
+      font-weight: 600;
+    }
+
+    .step-image {
+      max-width: 200px;
+      
+    }
+
+    .step-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+      /* flex-wrap: wrap; */
+    }
+
+    .step-text {
+      max-width: 60%;
+      
+    }
+
+                         /* media quriess */
+
+                         @media (max-width: 1200px) {
+  .step-text {
+    max-width: 65%;
+  }
+
+  .step-image {
+    max-width: 160px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .step-row {
+    gap: 20px;
+  }
+
+  .step-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .step-image {
+    margin: 0 auto;
+    max-width: 180px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .step-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .step-text {
+    max-width: 100%;
+  }
+
+  .step-number {
+    font-size: 36px;
+  }
+
+  .step-title {
+    font-size: 20px;
+  }
+
+  .step-image {
+    max-width: 160px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-image {
+    max-width: 140px;
+  }
+
+  .step-number {
+    font-size: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .step-row {
+    margin-bottom: 40px;
+  }
+
+  .step-number {
+    font-size: 26px;
+  }
+
+  .step-title {
+    font-size: 16px;
+  }
+
+  .step-image {
+    max-width: 120px;
+  }
+
+  section#step {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 0 15px;
+  }
+
+  .step-text p {
+    font-size: 14px;
+  }
+}
+                   /* why choose media quries */
+ @media (max-width: 992px) {
+ #choose{
+  margin-right: 100px;
+
+ }
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  #choose{
+    flex-direction: column;
+  margin-left: 100px;
+  width: 500px;
+
+  }
+
+ 
+}
+
+
+@media (max-width: 480px) {
+
+
+  
+}                  
+      
+</style>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="height: 80px;">
+        <div class="container-fluid" style="max-width: 1440px;">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.webp" alt="Logo" height="51">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation links in the center and button on the right -->
+            
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" style="width: 41px; height: 18px;" >
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item"  style="width: 62px; height: 18px;">
+                        <a class="nav-link" href="#about">AboutUs</a>
+                    </li>
+                    <li class="nav-item"  style="width: 58px; height: 18px;">
+                        <a class="nav-link" href="#services">Services</a>              
+                    </li>
+                    <li class="nav-item" style="width: 53px; height: 18px;">
+                        <a class="nav-link" href="#portfolio">Careers</a>
+                    </li>
+                    <li class="nav-item" style="width: 38px; height: 18px;">
+                        <a class="nav-link" href="#portfolio">Blogs</a>
+                    </li>
+                    <li class="nav-item"  style="width: 76px; height: 18px;">
+                        <a class="nav-link" href="#contact">ContactUs</a>
+                    </li>
+                </ul>
+                
+                <!-- Button on the right -->
+                 <div class="d-flex" style="margin-right: 90px; ">
+                   <a href=""> <button class="btn btn-primar" style="font-family:Plus Jakarta Sans; background-color:#071B59 ; color: white;" id="free">Free Consultation
+                        
+                    </button></a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    </header>
+
+
+    <main class="project">
+   <section class="title_box py-2">
+            <div class="py-sm-5 py-4 text-center text-white">
+                <h1 class="fw-bold">Web design</h1>
+                <p style="font-size: .7em;" class="mb-0">Home>webdesign</p>
+            </div>
+        </section>
+
+
+<!-- ui design -->
+
+        <section class="hero">
+    <div class="hero-text">
+      <h1>Web Design Services in Coimbatore:<br>Your Digital Success Story Starts Here</h1>
+      <p style="width: 550px;height: 90px; top: 218px;left: 102px;opacity: 1;">At <a href="#">PROFENAA INFOTECH</a>, we get it. We build websites that don’t just look good; they work hard for your business, 24/7.</p>
+      <p style="width: 550px; height:181px; top: 324px; left: 102px; opacity: 1;">Are you a business in Coimbatore looking for a powerful online presence? You know a great website isn’t just a luxury; it’s your virtual storefront, sales team, and customer service all rolled into one. But you’re not just looking for “a website”—you need a digital partner who truly understands your vision and delivers tangible results.</p>
+      <a href="#" class="btn">Reach us <i class="fa-solid fa-arrow-right ms-1"></i> </a>
+       
+    </div>
+    <div class="hero-image">
+      <img src="assest/resource/representations-user-experience-interface-design 1.webp" alt="UI/UX Design Image" />
+      
+      
+    </div>
+  </section>
+
+  <section class="website">
+     <div class="container-fluid py-5" style="margin-left: 50px;">
+    <div class="row align-items-center">
+      
+      <!-- Left Section -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-semibold mb-2">
+          What You Expect From Your Website <br>
+          <span class="text-white">We Deliver It!</span>
+        </h2>
+        <p class="mb-3">As a business owner, you need a website that</p>
+        <img src="assest/resource/Rectangle 55.webp" alt="Website Preview" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- Right Section -->
+      <div class="col-lg-6">
+        <ul class="feature-list list-unstyled row row-cols-1 row-cols-sm-2 g-4">
+          <li class="col"><i class="bi bi-star-fill"></i> Makes a Stunning First Impression</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Is Easy to Use (Seamless UX)</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Looks Perfect on Any Device (Mobile-Friendly)</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Loads Lightning-Fast</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Gets Found on Google (SEO-Friendly)</li>
+          <li class="col"><i class="bi bi-star-fill"></i> You Can Easily Update (CMS)</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Can Grow With You (Scalable)</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Is Secure & Trustworthy</li>
+          <li class="col"><i class="bi bi-star-fill"></i> Comes with Reliable Support</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  </section>
+
+  <section class="py-5 text-center" style="width: 500px; margin-left: 450px;" id="step">
+  <div class="container-fluid">
+    <p class="text-primary fw-semibold">SIMPLE & EFFECTIVE</p>
+    <h2 class="fw-bold mb-5">Our Web Design Process</h2>
+
+    <div class="step-wrapper">
+
+      <!-- Step 1 -->
+      <div class="step-row">
+        <div class="step-text text-start">
+          <div class="step-number" >1</div>
+          
+
+          <h5 class="step-title mt-2">Understand Your Vision</h5>
+          <p>We start by listening, understanding your goals, and strategizing how a new website can achieve them.</p>
+        </div>
+        <img src="assest/resource/undraw_verify-data_k0y1 1.webp" class="step-image" alt="Step 1">
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-row">
+        <div class="step-text text-start">
+          <div class="step-number">2</div>
+          <h5 class="step-title mt-2">Design & Develop</h5>
+          <p>Our expert team crafts a visually appealing, user-friendly, and highly functional website tailored to your brand. We focus on stunning UI/UX and clean, efficient code.</p>
+        </div>
+        <img src="assest/resource/undraw_designer_efwz 1.webp" class="step-image" alt="Step 2">
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-row">
+        <div class="step-text text-start">
+          <div class="step-number">3</div>
+          <h5 class="step-title mt-2">Optimize for Success</h5>
+          <p>We embed SEO best practices, ensure lightning-fast loading speeds, and guarantee mobile responsiveness for every device.</p>
+        </div>
+        
+        <img src="assest/resource/undraw_happy-announcement_23nf 1.webp" class="step-image" alt="Step 3">
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-row">
+        <div class="step-text text-start">
+          <div class="step-number">4</div>
+          <h5 class="step-title mt-2">Launch & Support</h5>
+          <p>We handle the seamless launch of your website and provide ongoing support, maintenance, and optimization to ensure long-term performance.</p>
+        </div>
+        <img src="assest/resource/undraw_launch-event_aur1 1.webp" class="step-image" alt="Step 4">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- why choose us -->
+
+<section class="why-choose-banner" style="background-color: #002b5c; color: white; padding: 10px 20px;width: 1440;
+height: 488;top: 2710px;">
+  <div class="container-fluid" style="margin-left: 50px" >
+    <div class="row align-items-center ;">
+      <!-- Left Content -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 style="font-size: 24px; font-weight: 700;">Why Choose PROFENAA INFOTECH in Coimbatore?</h2>
+        <p style="font-size: 1rem; max-width: 500px; margin-top: 15px;">
+          As a trusted web design company in Coimbatore, we're committed to building high-performing, SEO-friendly websites that drive real business growth.
+        </p>
+        
+        <div class="row row-cols-2 g-3 mt-4" id="choose">
+          <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px; border-radius: 6px; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+             <i class="fa-solid fa-arrow-trend-up"></i>
+ Local Expertise
+            </div>
+          </div>
+          <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px; border-radius: 6px; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-suitcase"></i> Skilled Professionals
+            </div>
+          </div>
+          <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px; border-radius: 6px; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-circle-user"></i> Results-Focused
+            </div>
+          </div>
+          <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px; border-radius: 6px; font-weight: 500; display: flex; align-items: center; gap: 10px;">
+              <i class="fa-solid fa-wallet"></i> Transparent Collaboration
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 text-center">
+        <div style="position: relative; display: inline-block;">
+          
+
+          <!-- Image -->
+          <img src="assest/resource/Group 2013.webp" alt="Team Member" 
+            style="position: relative; z-index: 2;  width: 500px; border-radius: 12px; margin-left:100px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- banner -->
+   <section class="banner">
+
+
+   <div class="custom-banner d-flex flex-wrap" style="margin-top: 100px;">
+    <div class="banner-text col-md-6" >
+      <h2 style="font-size: 25px; font-weight: 500;">Ready to transform your online presence? Let's build a website that genuinely works for your business!</h2>
+      <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px;  font-weight: 500; display: flex; align-items: center; gap: 20px; width: 134px; margin-bottom: 50px;">
+              Get in Touch!
+            </div>
+          </div>
+     
+    </div>
+  
+    
+    <div class="banner-image col-md-6 text-center" >
+      <img src="assest/resource/rocket.webp" alt="Rocket Image" class="rocket-img" style="margin-left: 110px; width: 500px;">
+    </div>
+    
+  </div>
+
+
+ </section>  
+
+    </main>
+
+                     <!-- webdesign  footer-->
+    <footer style="background-color: #002b5c; color: white; padding: 60px 20px;">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Column 1: Logo + Description + Social Icons -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="assest/resource/Logo (2) 1.png" alt="Profenna Logo" style="height: 40px; margin-bottom: 15px;">
+        <p style="font-size: 0.80rem; line-height: 1.6;">
+          A team of experienced designers and developers dedicated to creating exceptional websites. Providing custom web solutions and Digital Marketing tailored to your specific business goals.
+        </p>
+        <div class="mt-3">
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Services -->
+      <div class="col-md-2 mb-3 mb-md-0">
+        <h6 style="font-weight: 600;  ">Service</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.90rem;">
+          <li><a href="#" style="color: white; text-decoration: none;">Web Design</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Website Development</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Pages -->
+      <div class="col-md-2 mb-4 mb-md-0">
+        <h6 style="font-weight: 600;">Pages</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.95rem;">
+          <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact -->
+      <div class="col-md-4 " style="margin-left:100 px;">
+        <h6 style="font-weight: 600;">Contact</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.95rem;">
+          <li style="margin-bottom: 10px;">
+            <i class="fas fa-phone-alt me-2"></i> +91 9944423667 / +91 9944897638
+          </li>
+          <li style="margin-bottom: 10px;">
+            <i class="fas fa-envelope me-2"></i> contact@profenainfotech.com
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt me-2"></i> 14/3, Second floor, Profenaa Complex, Pollachi main road, Kuniamuthur, Coimbatore, Tamil Nadu - 642109
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </footer>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+
+<script src="index.js"></script>
+
+</body>
+</html>
