@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profenna info Tech</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="/assest/CSS/css/">
+    <link rel="stylesheet" href="/assest/Js/js/bootstrap.bundle.js"> -->
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<style>
+    .title_box {
+  background-color: #071B59;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
+}
+@media screen and (max-width:576px) {
+
+ .title_box h1 {
+     font-size: 1.3em;
+ }
+
+ .title_box p {
+     font-size: .6em !important;
+ }
+}
+
+
+
+                   /* why */
+   .who-we-are-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .who-we-are-section h2 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .who-we-are-section p {
+      font-size: 16px;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .who-we-are-section p a {
+      color: #0066cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .who-we-are-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    /* Responsive Tweaks */
+    @media (max-width: 768px) {
+      .who-we-are-section {
+        padding: 40px 10px;
+      }
+
+      .who-we-are-section h2 {
+        font-size: 24px;
+      }
+
+      .who-we-are-section p {
+        font-size: 14px;
+      }
+    } 
+    
+    
+                              /* our vision */
+   .mission-vision {
+      background-color: #eaf4fc;
+      padding: 60px 20px;
+      position: relative;
+      text-align: left;
+    }
+
+    .mission-vision h3 {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .mission-vision p {
+      color: #333;
+      font-size: 16px;
+      max-width: 500px;
+    }
+
+    .mission-img,
+    .vision-img {
+      width: 80px;
+      height: auto;
+    }
+
+    .world-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .mission-vision .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .mission-vision {
+        text-align: center;
+      }
+      .mission-vision .row > div {
+        margin-bottom: 30px;
+      }
+      .mission-vision p {
+        margin: 0 auto;
+      }
+
+    } 
+    
+    
+    /* what make us best */
+    .section-heading {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-subtext {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .icon-box {
+      padding: 10px 15px;
+    }
+
+    .icon-box img {
+      height: 40px;
+      margin-bottom: 15px;
+    }
+
+    .icon-box h5 {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .icon-box p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 767.98px) {
+      .section-heading {
+        font-size: 22px;
+      }
+
+      .section-subtext {
+        font-size: 14px;
+      }
+
+      .icon-box {
+        text-align: center;
+      }
+
+      .icon-box p {
+        font-size: 13px;
+      }
+
+      .icon-box img {
+        height: 35px;
+      }
+    }
+
+
+       /* how we help our business  */
+
+       .section-heading {
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .section-subtext {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .icon-card {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .icon-card img {
+      height: 35px;
+      margin-bottom: 12px;
+    }
+
+    .icon-card h6 {
+      font-weight: bold;
+      color: #0d6efd;
+    }
+
+    .icon-card p {
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 767.98px) {
+      .section-heading {
+        font-size: 22px;
+      }
+
+      .icon-card img {
+        height: 30px;
+      }
+
+      .icon-card p {
+        font-size: 13px;
+      }
+    }
+
+             /* form */
+   .contact-section {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    .contact-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-heading small {
+      color: #0d6efd;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .contact-heading h2 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    .form-control {
+      border-radius: 4px;
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+
+    .btn-submit {
+      background-color: #0d3e91;
+      color: #fff;
+      font-weight: 600;
+      padding: 10px;
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .illustration {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 767.98px) {
+      .contact-heading h2 {
+        font-size: 22px;
+      }
+
+      .illustration-col {
+        display: none;
+      }
+    }
+          
+</style>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" style="height: 80px;">
+        <div class="container-fluid" style="max-width: 1440px;">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.webp" alt="Logo" height="51">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation links in the center and button on the right -->
+            
+            
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" style="width: 41px; height: 18px;" >
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item"  style="width: 62px; height: 18px;">
+                        <a class="nav-link" href="#about">AboutUs</a>
+                    </li>
+                    <li class="nav-item"  style="width: 58px; height: 18px;">
+                        <a class="nav-link" href="#services">Services</a>              
+                    </li>
+                    <li class="nav-item" style="width: 53px; height: 18px;">
+                        <a class="nav-link" href="#careers">Careers</a>
+                    </li>
+                    <li class="nav-item" style="width: 38px; height: 18px;">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item"  style="width: 76px; height: 18px;">
+                        <a class="nav-link" href="#contact">ContactUs</a>
+                    </li>
+                </ul>
+                
+                <!-- Button on the right -->
+                 <div class="d-flex" style="margin-right: 90px; ">
+                   <a href=""> <button class="btn btn-primar" style="font-family:Plus Jakarta Sans; background-color:#071B59 ; color: white;" id="free">Free Consultation
+                        
+                    </button></a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    </header>
+<main class="project">
+   <section class="title_box py-2">
+            <div class="py-sm-5 py-4 text-center text-white">
+                <h1 class="fw-bold">About us</h1>
+                <p style="font-size: .7em;" class="mb-0">Home>AboutUs</p>
+            </div>
+        </section>
+
+    <section class="who-we-are-section container">
+  <h2>Who We Are</h2>
+  <p>
+    We are a passionate team of digital innovators, strategic thinkers, and tech enthusiasts based in Coimbatore, Tamil Nadu, India.
+    At <a href="#">PROFENAA INFOTECH</a>, we specialize in delivering cutting-edge web design, development, and digital marketing services
+    that transform ideas into impactful online experiences.
+  </p>
+  <img src="assest/resource/5209 1.webp" alt="Team Working" class="img-fluid">
+</section>
+
+
+<section class="mission-vision position-relative">
+  <!-- Optional World Background -->
+  <img src="assest/resource/World Map Pattern (1).png" alt="world map" class="world-bg">
+
+  <div class="container content">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h3>Our Mission</h3>
+        <p>
+          To empower businesses with tailored, effective, and innovative digital solutions that exceed expectations,
+          foster growth, and enhance online visibility.
+        </p>
+      </div>
+      <div class="col-md-6 text-md-end text-center">
+        <img src="assest/resource/traget1.webp" alt="Target Icon" class="mission-img">
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <h3>Our Vision</h3>
+        <p>
+          To become a leading force in the digital industry, known for our excellence, innovation, and client success.
+          We envision a digital future where every business thrives with the right guidance and support.
+        </p>
+      </div>
+      <div class="col-md-6 text-md-start text-center">
+        <img src="assest/resource/target2.webp" alt="Idea Icon" class="vision-img">
+      </div>
+    </div>
+  </div>
+</section>
+                  <!-- what make us best -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-heading">What Makes Us Best</h2>
+    <p class="section-subtext">
+      At <span class="text-primary fw-semibold">PROFENAA INFOTECH</span>, we stand out from the crowd through our unwavering<br class="d-none d-md-block">
+      dedication to quality and client satisfaction. Here’s what sets us apart:
+    </p>
+
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <img src="assest/resource/image 2.webp" alt="Client Approach">
+          <h5>Client–Centric Approach</h5>
+          <p>Your success is our priority. We listen intently to your needs, understand your goals, and tailor our strategies to deliver solutions that align perfectly with your business objectives.</p>
+          <p><strong>Innovative Solutions:</strong> We embrace the latest technologies and design trends to create modern, responsive, and future-proof digital assets that give you a competitive edge.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <img src="assest/resource/image.webp" alt="Experienced Professionals">
+          <h5>Experienced Professionals</h5>
+          <p>Our team comprises highly skilled designers, developers, and digital marketers with years of experience in their respective fields, ensuring expert execution of every project.</p>
+          <p><strong>Transparent Communication:</strong> We believe in open and honest communication. You’ll be kept in the loop through every stage of your project, with clear updates and explanations.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="icon-box">
+          <img src="assest/resource/image (1).webp" alt="Result-Oriented Strategies">
+          <h5>Result–Oriented Strategies</h5>
+          <p>Our focus isn’t just on aesthetics; it’s on delivering tangible results. We craft strategies designed to increase your online presence, drive traffic, and boost conversions.</p>
+          <p><strong>Post-Launch Support:</strong> Our commitment doesn’t end with project delivery. We ensure ongoing support and maintenance to ensure your digital assets continue to perform optimally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+              <!-- how we help our business -->
+  <section class="py-5">
+  <div class="container">
+    <h2 class="section-heading">How We Help Grow Your Business</h2>
+    <p class="section-subtext">
+      <span class="text-primary fw-semibold">PROFENAA INFOTECH</span> is your trusted partner in navigating the<br class="d-none d-md-block">
+      digital world. We empower your business to thrive<br class="d-none d-md-block">
+      online through:
+    </p>
+
+    <div class="row text-center text-md-start">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/visualization_1517973 1.webp" alt="Stunning Web Presence">
+          <h6>Stunning Web Presence</h6>
+          <p>We design and develop visually appealing, user-friendly, and highly functional websites that captivate your audience and effectively represent your brand.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/image (2).webp" alt="Online Visibility">
+          <h6>Enhanced Online Visibility</h6>
+          <p>Through strategic SEO and digital marketing techniques, we help your business rank higher in search results, making it easier for potential customers to find you.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/image (3).webp" alt="Customer Engagement">
+          <h6>Increased Customer Engagement</h6>
+          <p>We implement strategies that encourage interaction, build community, and foster strong relationships between your brand and its audience.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/image (4).webp" alt="Audience Reach">
+          <h6>Targeted Audience Reach</h6>
+          <p>Our digital marketing campaigns are meticulously crafted to reach your ideal customers, ensuring your message resonates with the right people at the right time.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/image (5).webp" alt="Conversion Rates">
+          <h6>Improved Conversion Rates</h6>
+          <p>From intuitive website layouts to compelling call-to-actions, we optimize your digital platforms to convert visitors into loyal customers.</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="icon-card">
+          <img src="assest/resource/image (6).webp" alt="Sustainable Growth">
+          <h6>Sustainable Growth</h6>
+          <p>We provide long-term digital strategies and insights that ensure your business continues to adapt, innovate, and grow in the ever-evolving digital landscape.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+<section class="banner">
+
+
+   <div class="custom-banner d-flex flex-wrap" style="margin-top: 100px;">
+    <div class="banner-text col-md-6" >
+      <h2 style="font-size: 25px; font-weight: 500;">Ready to transform your online presence? Let's build a website that genuinely works for your business!</h2>
+      <div class="col">
+            <div style="background: white; color: #002b5c; padding: 10px 15px;  font-weight: 500; display: flex; align-items: center; gap: 20px; width: 134px; margin-bottom: 50px;">
+              Get in Touch!
+            </div>
+          </div>
+     
+    </div>
+  
+    
+    <div class="banner-image col-md-6 text-center" >
+      <img src="assest/resource/rocket.webp" alt="Rocket Image" class="rocket-img" style="margin-left: 110px; width: 500px;">
+    </div>
+    
+  </div>
+
+
+ </section>  
+            <!-- form -->
+
+ <section class="contact-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center text-md-start">
+      <!-- Left Image -->
+      <div class="col-md-2 illustration-col">
+        <img src="assest/resource/undraw_contact-us_kcoa 1.webp" alt="Left Illustration" class="illustration">
+      </div>
+
+      <!-- Form Center -->
+      <div class="col-md-6">
+        <div class="contact-heading">
+          <small>CONTACT US</small>
+          <h2>Let’s Build Something Great Together</h2>
+        </div>
+        <form>
+           
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Full Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone Number">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Additional Message"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-submit">Submit Now</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-2 illustration-col">
+        <img src="assest/resource/undraw_terms_7l7t 1.webp" alt="Right Illustration" class="illustration">
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+                        <!-- footer -->
+<footer style="background-color: #002b5c; color: white; padding: 60px 20px;">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Column 1: Logo + Description + Social Icons -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <img src="assest/resource/Logo (2) 1.png" alt="Profenna Logo" style="height: 40px; margin-bottom: 15px;">
+        <p style="font-size: 0.80rem; line-height: 1.6;">
+          A team of experienced designers and developers dedicated to creating exceptional websites. Providing custom web solutions and Digital Marketing tailored to your specific business goals.
+        </p>
+        <div class="mt-3">
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-twitter"></i></a>
+          <a href="#" style="color: white; margin-right: 15px;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" style="color: white;"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Services -->
+      <div class="col-md-2 mb-3 mb-md-0">
+        <h6 style="font-weight: 600;  ">Service</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.90rem;">
+          <li><a href="#" style="color: white; text-decoration: none;">Web Design</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Website Development</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Pages -->
+      <div class="col-md-2 mb-4 mb-md-0">
+        <h6 style="font-weight: 600;">Pages</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.95rem;">
+          <li><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+          <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact -->
+      <div class="col-md-4 " style="margin-left:100 px;">
+        <h6 style="font-weight: 600;">Contact</h6>
+        <ul class="list-unstyled mt-3" style="font-size: 0.95rem;">
+          <li style="margin-bottom: 10px;">
+            <i class="fas fa-phone-alt me-2"></i> +91 9944423667 / +91 9944897638
+          </li>
+          <li style="margin-bottom: 10px;">
+            <i class="fas fa-envelope me-2"></i> contact@profenainfotech.com
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt me-2"></i> 14/3, Second floor, Profenaa Complex, Pollachi main road, Kuniamuthur, Coimbatore, Tamil Nadu - 642109
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    </footer>
+</main>
+</body>
+</html>
